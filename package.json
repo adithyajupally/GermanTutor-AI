@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.17.0",
+    "openai": "^6.42.0",
+    "tailwindcss": "^4.3.0",
+    "zustand": "^5.0.14"
+  }
+}
