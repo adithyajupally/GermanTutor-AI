@@ -1,9 +1,5 @@
 import { useState } from 'react';
 import {
-  CEFR_LEVELS,
-  CATEGORIES,
-  type CEFRLevel,
-  type Category,
   type Difficulty,
   type EvaluationResult,
   type PracticeView,
@@ -58,7 +54,7 @@ export interface PracticePageProps {
 
 export function PracticePage({ onAttemptSaved, onNotebookSave }: PracticePageProps) {
   const [view, setView] = useState<PracticeView>('setup');
-  const { level, difficulty, category, setLevel, setDifficulty, setCategory } = useSession();
+  const { level, difficulty, category, setLevel, setDifficulty} = useSession();
   const [strictness] = useState<Strictness>('normal');
   const [germanTranslation, setGermanTranslation] = useState('');
   const [generatedSentence, setGeneratedSentence] = useState<GenerateOutput | null>(null);
@@ -213,14 +209,12 @@ export function PracticePage({ onAttemptSaved, onNotebookSave }: PracticePagePro
         </p>
       </div>
 
-      {view === 'setup' && (
+      {view === 'setup' && 
         <div className="space-y-6 rounded-xl border border-zinc-800 bg-zinc-900/50 p-6">
           <SegmentGroup
             label="CEFR Level"
-            options={CEFR_LEVELS}
             value={level}
-            onChange={setLevel}
-          />
+            onChange={setLevel} options={[]}          />
 
           <fieldset>
             <legend className="mb-2 text-sm font-medium text-zinc-300">Difficulty</legend>
@@ -246,21 +240,17 @@ export function PracticePage({ onAttemptSaved, onNotebookSave }: PracticePagePro
           <fieldset>
             <legend className="mb-2 text-sm font-medium text-zinc-300">Category</legend>
             <div className="flex flex-wrap gap-2">
-              {CATEGORIES.map((cat) => (
                 <button
-                  key={cat}
+                
                   type="button"
-                  onClick={() => setCategory(cat)}
-                  className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
-                    category === cat
-                      ? 'bg-emerald-600 text-white'
-                      : 'bg-zinc-800 text-zinc-300 hover:bg-zinc-700 hover:text-white'
+                  
+                  className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-colors {
+                  ? 'bg-emerald-600 text-white' : 'bg-zinc-800 text-zinc-300 hover:bg-zinc-700 hover:text-white'
                   }`}
-                  aria-pressed={category === cat}
+                  
                 >
-                  {cat}
+                  
                 </button>
-              ))}
             </div>
           </fieldset>
 
@@ -276,7 +266,7 @@ export function PracticePage({ onAttemptSaved, onNotebookSave }: PracticePagePro
             {generateError && <ErrorBanner message={generateError} />}
           </div>
         </div>
-      )}
+      }
 
       {view === 'translating' && (
         <div className="space-y-6">
