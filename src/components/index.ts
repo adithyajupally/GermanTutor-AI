@@ -1,5 +1,6 @@
-export { PracticePage } from './PracticePage';
-export { NotebookPage } from './NotebookPage';
-export { HistoryPage } from './HistoryPage';
-export { SettingsPage } from './SettingsPage';
-export { WordExplorerPage } from './WordExplorerPage';
+export { AppHeader } from './AppHeader';
+export { TabNav } from './TabNav';
+export { ErrorBanner } from './ErrorBanner';
+export { ResultScreen } from './ResultScreen';
+export { ScoreBar } from './ScoreBar';
+export { SegmentGroup } from './SegmentGroup';
