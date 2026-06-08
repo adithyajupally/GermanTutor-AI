@@ -150,3 +150,30 @@ export interface NotebookEntry {
   grammarTag?: GrammarTag;
   savedManually: boolean;
 }
+export interface WordExample {
+  german: string;
+  english: string;
+}
+
+export interface SimilarWord {
+  word: string;
+  meaning: string;
+  difference: string;
+}
+
+export interface WordExplanation {
+  word: string;
+  meaning: string;
+  baseForm: string;
+  partOfSpeech: string;
+  grammarTopic: string;
+  explanation: string;
+
+  exampleSentences: WordExample[];
+
+  relatedForms: string[];
+
+  commonPatterns: string[];
+
+  similarWords: SimilarWord[];
+}

@@ -4,3 +4,4 @@ export { ErrorBanner } from './ErrorBanner';
 export { ResultScreen } from './ResultScreen';
 export { ScoreBar } from './ScoreBar';
 export { SegmentGroup } from './SegmentGroup';
+export type { TabId } from './TabNav';
