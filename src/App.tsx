@@ -5,6 +5,7 @@ import {
   NotebookPage,
   PracticePage,
   SettingsPage,
+  WordExplorerPage,
 } from './pages';
 import { useHistory } from './hooks/useHistory';
 import { useNotebook } from './hooks/useNotebook';
@@ -27,6 +28,7 @@ function App() {
         )}
         {activeTab === 'notebook' && <NotebookPage entries={notebookEntries} />}
         {activeTab === 'history' && <HistoryPage entries={historyEntries} />}
+        {activeTab === 'explorer' && <WordExplorerPage />}
         {activeTab === 'settings' && <SettingsPage />}
       </main>
     </div>

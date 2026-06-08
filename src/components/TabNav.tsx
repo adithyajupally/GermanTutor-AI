@@ -1,9 +1,10 @@
-export type TabId = 'practice' | 'notebook' | 'history' | 'settings';
+export type TabId = 'practice' | 'notebook' | 'history' | 'explorer' | 'settings';
 
 const TABS: { id: TabId; label: string }[] = [
   { id: 'practice', label: 'Practice' },
   { id: 'notebook', label: 'Notebook' },
   { id: 'history', label: 'History' },
+  { id: 'explorer', label: 'Explorer' },
   { id: 'settings', label: 'Settings' },
 ];
 
