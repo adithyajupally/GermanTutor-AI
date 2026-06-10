@@ -1,80 +1,173 @@
+# 🇩🇪 GermanTutor-AI
 
-# React + TypeScript + Vite
+An AI-powered German language learning platform built with React, TypeScript, and Vite. The application helps learners practice German grammar, vocabulary, sentence formation, and language skills through an interactive AI-assisted experience.
 
-=======
-# GermanTutor-AI
-https://german-tutor-ai-9qx7.vercel.app/
+🔗 **Live Demo:** https://german-tutor-ai-9qx7.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🤖 AI-powered German language tutoring
+* 📚 Grammar explanations and exercises
+* 📝 Vocabulary learning and practice
+* 💬 Interactive conversational learning
+* 🎯 Beginner to intermediate German support
+* ⚡ Fast and responsive user interface
+* 📱 Mobile-friendly design
+* 🌙 Modern React-based architecture
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+### Frontend
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* React 19
+* TypeScript
+* Vite
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Styling
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* CSS3
+* Responsive Design
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Deployment
+
+* Vercel
+
+### Development Tools
+
+* ESLint
+* TypeScript Compiler
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have installed:
+
+* Node.js (v18 or higher)
+* npm or yarn
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/adithyajupally/GermanTutor-AI.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Navigate to the project directory:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd GermanTutor-AI
 ```
 
+Install dependencies:
 
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser and visit:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 📂 Project Structure
+
+```text
+GermanTutor-AI/
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── hooks/
+│   ├── utils/
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+---
+
+## 📖 Use Cases
+
+* German A1–B2 learners
+* Exam preparation (Goethe, TELC, TestDaF)
+* Daily German practice
+* Vocabulary revision
+* Grammar reinforcement
+* Conversational German improvement
+
+---
+
+## 🎯 Future Improvements
+
+* Speech-to-text pronunciation practice
+* Personalized learning paths
+* Progress tracking dashboard
+* Flashcard system
+* AI-generated quizzes
+* Multi-language support
+* User authentication and profiles
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a feature branch
+
+```bash
+git checkout -b feature/new-feature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push to your branch
+
+```bash
+git push origin feature/new-feature
+```
+
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+Developed by Adithya
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
